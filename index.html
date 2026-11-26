@@ -24,6 +24,7 @@
 <meta name="theme-color" content="#F7F7F4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#131209" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -139,7 +140,7 @@ p,li,dd{text-wrap:pretty}
 /* nav */
 .nav{position:fixed;top:var(--s4);left:50%;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:var(--s5);padding:var(--s2) var(--s2) var(--s2) var(--s4);border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);white-space:nowrap}
 .nav .name{text-decoration:none;display:inline-flex;align-items:center;gap:var(--s2)}
-.mk{width:10px;height:10px;border-radius:3px;background:var(--lime);box-shadow:0 0 0 1px var(--accent)}
+.mk{width:20px;height:20px;border-radius:5px;display:block}
 .nav ul{display:flex;gap:var(--s4);list-style:none}
 .nav ul a{white-space:nowrap;color:var(--muted);text-decoration:none;transition:color 200ms var(--ease)}
 .nav ul a:hover{color:var(--ink)}
@@ -288,7 +289,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
 .scout{border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:var(--s5);box-shadow:0 1px 0 var(--line),0 24px 48px -32px rgba(7,17,13,.35)}
 .sc-top{display:flex;justify-content:space-between;align-items:center;color:var(--faint);margin-bottom:var(--s4)}
 .sc-brand{display:inline-flex;align-items:center;gap:var(--s2);color:var(--ink);font-weight:600}
-.sc-brand i{width:8px;height:8px;border-radius:2px;background:var(--lime);box-shadow:0 0 0 1px var(--accent)}
+.sc-brand img{width:16px;height:16px;border-radius:4px;display:block}
 .sc-meta{color:var(--muted);margin-top:var(--s1)}
 .sc-mid{display:grid;grid-template-columns:112px 1fr;gap:var(--s5);align-items:center;margin:var(--s5) 0}
 .ring{position:relative;width:112px;height:112px}
@@ -383,7 +384,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
 <a class="skip button-sm" href="#main">Skip to content</a>
 
 <nav class="nav" aria-label="Main">
-  <a class="name title-3" href="#top"><i class="mk" aria-hidden="true"></i>Abhishek Bhambhana</a>
+  <a class="name title-3" href="#top"><img class="mk" src="assets/mark.svg" width="20" height="20" alt="">Abhishek Bhambhana</a>
   <ul class="body-6">
     <li><a href="#upwork">Upwork</a></li>
     <li><a href="#gtm">GTM</a></li>
@@ -409,7 +410,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
       </div>
       <figure class="scout-wrap">
         <div class="scout" role="img" aria-label="Example of UGD Scout scoring an Upwork job: 87 out of 100, worth a Connect">
-          <div class="sc-top caption-4"><span class="sc-brand"><i></i>UGD Scout</span><span class="sc-ex">Example job</span></div>
+          <div class="sc-top caption-4"><span class="sc-brand"><img src="assets/mark.svg" width="16" height="16" alt="">UGD Scout</span><span class="sc-ex">Example job</span></div>
           <p class="sc-title title-3">Senior MERN developer for a SaaS dashboard</p>
           <p class="sc-meta caption-4">Payment verified &middot; $48K spent &middot; 4.9 rating &middot; 12 hires</p>
           <div class="sc-mid">
