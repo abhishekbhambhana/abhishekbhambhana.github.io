@@ -23,7 +23,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#F7F7F4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#131209" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="assets/abhishek-bhambhana-square.jpg">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -39,7 +39,6 @@
       "familyName": "Bhambhana",
       "jobTitle": "Upwork Growth Consultant and Founder of Upwork Growth Desk",
       "description": "Upwork growth consultant and founder of Upwork Growth Desk, based in Ahmedabad, India. Has run Upwork accounts since 2019: 50+ accounts, 1,000+ contracts, $1.5M+ won for clients. Previously in go to market and tech sales, including fundraising work at MonkeyBox and growth and investor work at UnitPay.",
-      "image": "https://abhishekbhambhana.github.io/assets/abhishek-bhambhana.jpg",
       "url": "https://abhishekbhambhana.github.io/",
       "address": {"@type": "PostalAddress", "addressLocality": "Ahmedabad", "addressRegion": "Gujarat", "addressCountry": "IN"},
       "worksFor": {"@id": "https://upgrowthdesk.com/#org"},
@@ -94,19 +93,19 @@
 <style>
 :root{
   --bg:#F7F7F4; --surface:#FFFFFF; --ink:#0A0A0A; --muted:#5C5C58; --faint:#8A8A85; --line:#E3E3DE;
-  --head-from:#000000; --head-to:#666666; --accent:#FF5A1F;
+  --head-from:#000000; --head-to:#666666; --accent:#2F6A3A; --lime:#CAFF45; --on-lime:#07110D;
   --ease:cubic-bezier(0.22,1,0.36,1);
   --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px; --s6:32px; --s7:40px; --s8:48px; --s9:64px; --s10:80px; --s11:96px;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --bg:#131209; --surface:#1F1F1F; --ink:#F2F2EE; --muted:#A3A39C; --faint:#76766F; --line:#313131;
-    --head-from:#FFFFFF; --head-to:#9B9B9B; --accent:#FF6A33;
+    --head-from:#FFFFFF; --head-to:#9B9B9B; --accent:#CAFF45; --lime:#CAFF45; --on-lime:#07110D;
   }
 }
 :root[data-theme="dark"]{
   --bg:#131209; --surface:#1F1F1F; --ink:#F2F2EE; --muted:#A3A39C; --faint:#76766F; --line:#313131;
-  --head-from:#FFFFFF; --head-to:#9B9B9B; --accent:#FF6A33;
+  --head-from:#FFFFFF; --head-to:#9B9B9B; --accent:#CAFF45; --lime:#CAFF45; --on-lime:#07110D;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -139,7 +138,8 @@ p,li,dd{text-wrap:pretty}
 
 /* nav */
 .nav{position:fixed;top:var(--s4);left:50%;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:var(--s5);padding:var(--s2) var(--s2) var(--s2) var(--s4);border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);white-space:nowrap}
-.nav .name{text-decoration:none}
+.nav .name{text-decoration:none;display:inline-flex;align-items:center;gap:var(--s2)}
+.mk{width:10px;height:10px;border-radius:3px;background:var(--lime);box-shadow:0 0 0 1px var(--accent)}
 .nav ul{display:flex;gap:var(--s4);list-style:none}
 .nav ul a{white-space:nowrap;color:var(--muted);text-decoration:none;transition:color 200ms var(--ease)}
 .nav ul a:hover{color:var(--ink)}
@@ -152,7 +152,7 @@ p,li,dd{text-wrap:pretty}
 
 /* hero */
 .hero{padding:160px 0 var(--s10)}
-.hero-grid{display:grid;grid-template-columns:1fr 320px;gap:var(--s9);align-items:end}
+.hero-grid{display:grid;grid-template-columns:1fr 380px;gap:var(--s9);align-items:end}
 .eyebrow{color:var(--muted);margin-bottom:var(--s5)}
 .hero h1{max-width:680px}
 .hero h1 .ln{display:block;overflow:hidden;padding-bottom:6px;margin-bottom:-6px}
@@ -161,8 +161,6 @@ p,li,dd{text-wrap:pretty}
 .hero .sub strong{color:var(--ink);font-weight:500}
 .hero .cta{display:flex;align-items:center;gap:var(--s5);margin-top:var(--s6);flex-wrap:wrap}
 .hero .proof{color:var(--muted);max-width:360px}
-.portrait{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--surface);aspect-ratio:2/3}
-.portrait img{width:100%;height:100%;object-fit:cover}
 .portrait-cap{margin-top:var(--s3);color:var(--faint)}
 
 .stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:16px;background:var(--surface)}
@@ -258,10 +256,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
 .js .hero h1 .ln:nth-child(3) .in{animation-delay:300ms}
 @keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 @keyframes lineUp{from{transform:translateY(105%)}to{transform:none}}
-.js .portrait{animation:unclip 1100ms var(--ease) 200ms both}
-.js .portrait img{animation:settle 1400ms var(--ease) 200ms both}
-@keyframes unclip{from{clip-path:inset(100% 0 0 0 round 16px)}to{clip-path:inset(0 0 0 0 round 16px)}}
-@keyframes settle{from{transform:scale(1.12)}to{transform:scale(1)}}
 .js .portrait-cap{animation:up 700ms var(--ease) 700ms both}
 
 .marquee{margin-top:var(--s8);overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
@@ -289,6 +283,51 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
 .process.on .steps li{opacity:1;transform:none}
 .process.on .steps .dot{background:var(--accent);border-color:var(--accent)}
 
+
+/* UGD Scout card */
+.scout{border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:var(--s5);box-shadow:0 1px 0 var(--line),0 24px 48px -32px rgba(7,17,13,.35)}
+.sc-top{display:flex;justify-content:space-between;align-items:center;color:var(--faint);margin-bottom:var(--s4)}
+.sc-brand{display:inline-flex;align-items:center;gap:var(--s2);color:var(--ink);font-weight:600}
+.sc-brand i{width:8px;height:8px;border-radius:2px;background:var(--lime);box-shadow:0 0 0 1px var(--accent)}
+.sc-meta{color:var(--muted);margin-top:var(--s1)}
+.sc-mid{display:grid;grid-template-columns:112px 1fr;gap:var(--s5);align-items:center;margin:var(--s5) 0}
+.ring{position:relative;width:112px;height:112px}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:8}
+.ring .rb{stroke:var(--line)}
+.ring .rf{stroke:var(--accent);stroke-linecap:round;stroke-dasharray:100;stroke-dashoffset:13}
+.rn{position:absolute;inset:0;display:flex;align-items:baseline;justify-content:center;padding-top:38px;gap:2px}
+.rn .mono{font-size:30px;line-height:36px;font-weight:500}
+.rn small{color:var(--faint)}
+.sc-bars{list-style:none;display:flex;flex-direction:column;gap:var(--s3)}
+.sc-bars li{display:grid;grid-template-columns:48px 1fr 24px;gap:var(--s2);align-items:center;color:var(--muted)}
+.bt{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.bf{display:block;height:100%;width:var(--v);background:var(--accent);border-radius:3px;transform-origin:left}
+.bv{text-align:right;color:var(--ink)}
+.sc-foot{display:flex;justify-content:space-between;align-items:center;gap:var(--s3);flex-wrap:wrap;padding-top:var(--s4);border-top:1px solid var(--line)}
+.chip{background:var(--lime);color:var(--on-lime);padding:var(--s1) var(--s3);border-radius:8px}
+.sc-next{color:var(--muted)}
+.js .scout{animation:up 900ms var(--ease) 260ms both}
+.js .ring .rf{animation:ring 1400ms var(--ease) 700ms both}
+@keyframes ring{from{stroke-dashoffset:100}to{stroke-dashoffset:13}}
+.js .bf{animation:bar 1000ms var(--ease) both;animation-delay:calc(800ms + var(--i) * 90ms)}
+@keyframes bar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.js .chip{animation:pop 500ms var(--ease) 1700ms both}
+@keyframes pop{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
+
+/* results */
+.results{margin-top:var(--s6);border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:var(--s5);display:flex;flex-direction:column;gap:var(--s5)}
+.rs{display:grid;grid-template-columns:180px 1fr 170px;gap:var(--s4);align-items:center}
+.rs .rl{color:var(--ink)}
+.rs .rv{color:var(--ink);text-align:right;font-size:14px;white-space:nowrap}
+.rbars{display:flex;flex-direction:column;gap:6px}
+.rbars span{display:block;height:8px;border-radius:4px;transform-origin:left;transform:scaleX(0);transition:transform 1100ms var(--ease)}
+.rbars .b0{background:var(--line);width:var(--a)}
+.rbars .b1{background:var(--accent);width:var(--b);transition-delay:250ms}
+.reveal.in .rbars span,.no-js .rbars span{transform:scaleX(1)}
+.rkey{display:flex;gap:var(--s4);color:var(--faint)}
+.rkey i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+
 /* reveal */
 .reveal{opacity:0;transform:translateY(32px);transition:opacity 700ms var(--ease),transform 700ms var(--ease)}
 .reveal.in{opacity:1;transform:none}
@@ -296,7 +335,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
 
 @media (max-width:900px){
   .hero-grid{grid-template-columns:1fr;gap:var(--s7)}
-  .portrait{max-width:280px;order:-1}
+  .scout-wrap{max-width:420px}
   .block-grid{grid-template-columns:1fr;gap:var(--s4)}
   .label{position:static}
   .quotes{grid-template-columns:1fr}
@@ -313,6 +352,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
   .stat:nth-child(n+3){border-top:1px solid var(--line)}
   .repos{grid-template-columns:1fr}
   .rows li{grid-template-columns:1fr;gap:var(--s1)}
+  .rs{grid-template-columns:1fr;gap:var(--s2)}
+  .rs .rv{text-align:left}
+  .sc-mid{grid-template-columns:96px 1fr}
+  .ring{width:96px;height:96px}
+  .rn{padding-top:30px}
   section.block{padding:var(--s9) 0}
   .nav{gap:var(--s3)}
   .steps{grid-template-columns:1fr;gap:var(--s5);padding-left:var(--s6)}
@@ -323,7 +367,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
   .marquee span{font-size:18px;line-height:28px;padding:var(--s4) var(--s5)}
 }
 @media (prefers-reduced-motion: reduce){
-  .js .nav,.js .hero .eyebrow,.js .hero .sub,.js .hero .cta,.js .hero h1 .in,.js .portrait,.js .portrait img,.js .portrait-cap{animation:none}
+  .js .scout,.js .ring .rf,.js .bf,.js .chip,.rbars span,.js .nav,.js .hero .eyebrow,.js .hero .sub,.js .hero .cta,.js .hero h1 .in{animation:none;transition:none;transform:none}
   .marquee .track{animation:none;flex-wrap:wrap;width:auto}
   .marquee .set + .set{display:none}
   .marquee .set{flex-wrap:wrap}
@@ -339,7 +383,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
 <a class="skip button-sm" href="#main">Skip to content</a>
 
 <nav class="nav" aria-label="Main">
-  <a class="name title-3" href="#top">Abhishek Bhambhana</a>
+  <a class="name title-3" href="#top"><i class="mk" aria-hidden="true"></i>Abhishek Bhambhana</a>
   <ul class="body-6">
     <li><a href="#upwork">Upwork</a></li>
     <li><a href="#gtm">GTM</a></li>
@@ -363,9 +407,18 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
           <p class="proof body-6">"We significantly grew our account, exceeding $100K in revenue." <br>Vijay Gorfad, founder of UnitPay</p>
         </div>
       </div>
-      <figure>
-        <div class="portrait"><img src="assets/abhishek-bhambhana.jpg" width="426" height="640" alt="Portrait of Abhishek Bhambhana"></div>
-        <figcaption class="portrait-cap caption-4">Founder, Upwork Growth Desk</figcaption>
+      <figure class="scout-wrap">
+        <div class="scout" role="img" aria-label="Example of UGD Scout scoring an Upwork job: 87 out of 100, worth a Connect">
+          <div class="sc-top caption-4"><span class="sc-brand"><i></i>UGD Scout</span><span class="sc-ex">Example job</span></div>
+          <p class="sc-title title-3">Senior MERN developer for a SaaS dashboard</p>
+          <p class="sc-meta caption-4">Payment verified &middot; $48K spent &middot; 4.9 rating &middot; 12 hires</p>
+          <div class="sc-mid">
+            <div class="ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" class="rb"/><circle cx="60" cy="60" r="52" class="rf" pathLength="100"/></svg><div class="rn"><span class="mono" data-count="87" data-auto>87</span><small class="caption-4">/100</small></div></div>
+            <ul class="sc-bars caption-4"><li style="--v:92%;--i:0"><span class="bl">Client</span><span class="bt"><span class="bf"></span></span><span class="bv mono">92</span></li><li style="--v:80%;--i:1"><span class="bl">Budget</span><span class="bt"><span class="bf"></span></span><span class="bv mono">80</span></li><li style="--v:88%;--i:2"><span class="bl">Intent</span><span class="bt"><span class="bf"></span></span><span class="bv mono">88</span></li><li style="--v:86%;--i:3"><span class="bl">Fit</span><span class="bt"><span class="bf"></span></span><span class="bv mono">86</span></li></ul>
+          </div>
+          <div class="sc-foot"><span class="chip button-sm">Worth a Connect</span><span class="caption-4 sc-next">Draft in UGD Autopilot &rarr;</span></div>
+        </div>
+        <figcaption class="portrait-cap caption-4">UGD Scout, the Chrome extension we built to score Upwork jobs. Example data.</figcaption>
       </figure>
     </div>
   </div>
@@ -417,6 +470,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
       <h2 class="heading-4" id="h-gtm">Go to market, from zero</h2>
       <p class="body-3">From December 2024 to March 2025 I worked as a fractional head of sales for five early startups. Each one needed the same first things: a clear picture of who buys, a cold email and LinkedIn routine someone could actually keep up, and a discovery call that ends with a next step.</p>
       <p class="body-3">Across the five, leads went up by about half and sales cycles got <strong>30 to 45% shorter</strong>. One of them grew revenue <strong>5x</strong>.</p>
+      <div class="results" aria-label="Results across five startups">
+        <div class="rs"><span class="rl title-3">Leads</span><span class="rbars"><span class="b0" style="--a:62%"></span><span class="b1" style="--b:93%"></span></span><span class="rv mono">+50%</span></div>
+        <div class="rs"><span class="rl title-3">Sales cycle</span><span class="rbars"><span class="b0" style="--a:90%"></span><span class="b1" style="--b:56%"></span></span><span class="rv mono">30 to 45% shorter</span></div>
+        <div class="rs"><span class="rl title-3">Revenue, one startup</span><span class="rbars"><span class="b0" style="--a:19%"></span><span class="b1" style="--b:95%"></span></span><span class="rv mono">5x</span></div>
+        <div class="rkey caption-4"><span><i style="background:var(--line)"></i>Before</span><span><i style="background:var(--accent)"></i>After</span></div>
+      </div>
       <article class="case">
         <div class="top"><h3 class="heading-6">UnitPay</h3><span class="meta caption-4">Reporting to founder Vijay Gorfad</span></div>
         <p class="body-3">At UnitPay I worked on growth and sales end to end. I decided which channels deserved our time, tightened the sales cycle from first reply to signed contract, and worked on the investor side: the pitch story, the decks, and the conversations around them.</p>
@@ -591,7 +650,8 @@ document.documentElement.classList.add('js');
     }
     requestAnimationFrame(frame);
   }
-  var nums = document.querySelectorAll('[data-count]');
+  var nums = document.querySelectorAll('.stats [data-count]');
+  var auto = document.querySelector('[data-auto]'); if (auto && !reduce){ auto.textContent='0'; setTimeout(function(){ count(auto); }, 700); }
   var proc = document.querySelector('.process');
   if ('IntersectionObserver' in window) {
     var io2 = new IntersectionObserver(function(entries){
