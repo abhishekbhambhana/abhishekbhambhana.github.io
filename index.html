@@ -94,19 +94,19 @@
 <style>
 :root{
   --bg:#F7F7F4; --surface:#FFFFFF; --ink:#0A0A0A; --muted:#5C5C58; --faint:#8A8A85; --line:#E3E3DE;
-  --head-from:#000000; --head-to:#666666;
+  --head-from:#000000; --head-to:#666666; --accent:#FF5A1F;
   --ease:cubic-bezier(0.22,1,0.36,1);
   --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px; --s6:32px; --s7:40px; --s8:48px; --s9:64px; --s10:80px; --s11:96px;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --bg:#131209; --surface:#1F1F1F; --ink:#F2F2EE; --muted:#A3A39C; --faint:#76766F; --line:#313131;
-    --head-from:#FFFFFF; --head-to:#9B9B9B;
+    --head-from:#FFFFFF; --head-to:#9B9B9B; --accent:#FF6A33;
   }
 }
 :root[data-theme="dark"]{
   --bg:#131209; --surface:#1F1F1F; --ink:#F2F2EE; --muted:#A3A39C; --faint:#76766F; --line:#313131;
-  --head-from:#FFFFFF; --head-to:#9B9B9B;
+  --head-from:#FFFFFF; --head-to:#9B9B9B; --accent:#FF6A33;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -141,7 +141,7 @@ p,li,dd{text-wrap:pretty}
 .nav{position:fixed;top:var(--s4);left:50%;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:var(--s5);padding:var(--s2) var(--s2) var(--s2) var(--s4);border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);white-space:nowrap}
 .nav .name{text-decoration:none}
 .nav ul{display:flex;gap:var(--s4);list-style:none}
-.nav ul a{color:var(--muted);text-decoration:none;transition:color 200ms var(--ease)}
+.nav ul a{white-space:nowrap;color:var(--muted);text-decoration:none;transition:color 200ms var(--ease)}
 .nav ul a:hover{color:var(--ink)}
 .btn{display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s2) var(--s3);border-radius:8px;background:var(--ink);color:var(--bg);text-decoration:none;transition:transform 160ms var(--ease),opacity 200ms var(--ease)}
 .btn:hover{opacity:.86}
@@ -154,7 +154,9 @@ p,li,dd{text-wrap:pretty}
 .hero{padding:160px 0 var(--s10)}
 .hero-grid{display:grid;grid-template-columns:1fr 320px;gap:var(--s9);align-items:end}
 .eyebrow{color:var(--muted);margin-bottom:var(--s5)}
-.hero h1{max-width:680px;background:linear-gradient(90deg,var(--head-from),var(--head-to));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1{max-width:680px}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:6px;margin-bottom:-6px}
+.hero h1 .in{display:block;background:linear-gradient(90deg,var(--head-from),var(--head-to));-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero .sub{max-width:680px;margin-top:var(--s5);color:var(--muted)}
 .hero .sub strong{color:var(--ink);font-weight:500}
 .hero .cta{display:flex;align-items:center;gap:var(--s5);margin-top:var(--s6);flex-wrap:wrap}
@@ -232,6 +234,61 @@ section.block{padding:var(--s10) 0;border-top:1px solid var(--line)}
 footer{padding:var(--s6) 0 var(--s8);color:var(--faint);border-top:1px solid var(--line)}
 footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:wrap}
 
+
+/* motion */
+.clock{color:var(--ink)}
+.btn .arr{display:inline-block;transition:transform 200ms var(--ease)}
+.btn:hover .arr{transform:translateX(3px)}
+.repo{position:relative}
+.repo .go{position:absolute;top:var(--s5);right:var(--s5);color:var(--faint);transition:transform 240ms var(--ease),color 200ms var(--ease)}
+.repo:hover{transform:translateY(-2px)}
+.repo:hover .go{transform:translate(2px,-2px);color:var(--accent)}
+.rows a.k{background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size 300ms var(--ease);justify-self:start}
+.rows a.k:hover{text-decoration:none;background-size:100% 1px}
+
+.js .nav{animation:navIn 700ms var(--ease) both}
+@keyframes navIn{from{opacity:0;transform:translate(-50%,-12px)}to{opacity:1;transform:translate(-50%,0)}}
+.js .hero .eyebrow,.js .hero .sub,.js .hero .cta{animation:up 800ms var(--ease) both}
+.js .hero .eyebrow{animation-delay:80ms}
+.js .hero .sub{animation-delay:420ms}
+.js .hero .cta{animation-delay:520ms}
+.js .hero h1 .in{animation:lineUp 900ms var(--ease) both}
+.js .hero h1 .ln:nth-child(1) .in{animation-delay:140ms}
+.js .hero h1 .ln:nth-child(2) .in{animation-delay:220ms}
+.js .hero h1 .ln:nth-child(3) .in{animation-delay:300ms}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes lineUp{from{transform:translateY(105%)}to{transform:none}}
+.js .portrait{animation:unclip 1100ms var(--ease) 200ms both}
+.js .portrait img{animation:settle 1400ms var(--ease) 200ms both}
+@keyframes unclip{from{clip-path:inset(100% 0 0 0 round 16px)}to{clip-path:inset(0 0 0 0 round 16px)}}
+@keyframes settle{from{transform:scale(1.12)}to{transform:scale(1)}}
+.js .portrait-cap{animation:up 700ms var(--ease) 700ms both}
+
+.marquee{margin-top:var(--s8);overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee .track{display:flex;width:max-content;animation:slide 60s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.marquee .set{display:flex}
+.marquee span{font-size:24px;line-height:32px;font-weight:500;letter-spacing:-0.01em;padding:var(--s5) var(--s6);color:var(--muted);white-space:nowrap;position:relative}
+.marquee span::after{content:"";position:absolute;right:-3px;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;background:var(--line)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+.reveal .prose h2{clip-path:inset(0 0 100% 0);transform:translateY(12px);transition:clip-path 900ms var(--ease) 120ms,transform 900ms var(--ease) 120ms}
+.reveal.in .prose h2,.no-js .prose h2{clip-path:inset(0 0 -10% 0);transform:none}
+
+.process{margin-top:var(--s9);border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:var(--s6) var(--s5) var(--s5)}
+.process .ph{color:var(--faint);margin-bottom:var(--s6)}
+.stepwrap{position:relative}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:var(--s5)}
+.rail{position:absolute;left:6px;right:6px;top:6px;height:1px;background:var(--line)}
+.rail .fill{position:absolute;inset:0;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform 1600ms cubic-bezier(0.77,0,0.175,1)}
+.steps li{position:relative;display:flex;flex-direction:column;gap:var(--s2);opacity:.35;transform:translateY(8px);transition:opacity 600ms var(--ease),transform 600ms var(--ease);transition-delay:calc(var(--i) * 300ms + 200ms)}
+.steps .dot{width:13px;height:13px;border-radius:50%;background:var(--surface);border:1px solid var(--faint);margin-bottom:var(--s3);position:relative;z-index:1;transition:background-color 300ms var(--ease),border-color 300ms var(--ease);transition-delay:calc(var(--i) * 300ms + 200ms)}
+.steps .sn{color:var(--faint)}
+.steps .sd{color:var(--muted)}
+.process.on .rail .fill{transform:scaleX(1)}
+.process.on .steps li{opacity:1;transform:none}
+.process.on .steps .dot{background:var(--accent);border-color:var(--accent)}
+
 /* reveal */
 .reveal{opacity:0;transform:translateY(32px);transition:opacity 700ms var(--ease),transform 700ms var(--ease)}
 .reveal.in{opacity:1;transform:none}
@@ -258,8 +315,20 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
   .rows li{grid-template-columns:1fr;gap:var(--s1)}
   section.block{padding:var(--s9) 0}
   .nav{gap:var(--s3)}
+  .steps{grid-template-columns:1fr;gap:var(--s5);padding-left:var(--s6)}
+  .rail{left:6px;right:auto;top:6px;bottom:6px;width:1px;height:auto}
+  .rail .fill{transform:scaleY(0);transform-origin:top}
+  .process.on .rail .fill{transform:scaleY(1)}
+  .steps .dot{position:absolute;left:calc(-1 * var(--s6));top:0;margin:0}
+  .marquee span{font-size:18px;line-height:28px;padding:var(--s4) var(--s5)}
 }
 @media (prefers-reduced-motion: reduce){
+  .js .nav,.js .hero .eyebrow,.js .hero .sub,.js .hero .cta,.js .hero h1 .in,.js .portrait,.js .portrait img,.js .portrait-cap{animation:none}
+  .marquee .track{animation:none;flex-wrap:wrap;width:auto}
+  .marquee .set + .set{display:none}
+  .marquee .set{flex-wrap:wrap}
+  .reveal .prose h2{clip-path:none;transform:none;transition:none}
+  .rail .fill,.steps li,.steps .dot{transition:none}
   html{scroll-behavior:auto}
   .reveal{transform:none;transition:opacity 400ms linear}
   .tagline .w{transition:none;color:var(--ink)}
@@ -286,11 +355,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <p class="eyebrow caption-1">Abhishek Bhambhana &middot; Ahmedabad, India</p>
-        <h1 class="heading-1">I help freelancers<br>and agencies win steady<br>work on Upwork.</h1>
+        <p class="eyebrow caption-1">Abhishek Bhambhana &middot; Ahmedabad, India &middot; <span class="clock mono" aria-label="Local time in Ahmedabad"></span></p>
+        <h1 class="heading-1"><span class="ln"><span class="in">I help freelancers</span></span><span class="ln"><span class="in">and agencies win steady</span></span><span class="ln"><span class="in">work on Upwork.</span></span></h1>
         <p class="sub title-2">I run <strong>Upwork Growth Desk</strong>. Since 2019 I've managed more than 50 Upwork accounts and closed over 1,000 contracts, worth <strong>$1.5M+</strong> to the people I work for. Alongside that I've done go to market and tech sales for startups.</p>
         <div class="cta">
-          <a class="btn lg button-md" href="https://cal.com/abhishek-bhambhana-40tn49/30-min-of-upwork-growth">Book a 30 minute call</a>
+          <a class="btn lg button-md" href="https://cal.com/abhishek-bhambhana-40tn49/30-min-of-upwork-growth">Book a 30 minute call <span class="arr" aria-hidden="true">&rarr;</span></a>
           <p class="proof body-6">"We significantly grew our account, exceeding $100K in revenue." <br>Vijay Gorfad, founder of UnitPay</p>
         </div>
       </div>
@@ -305,10 +374,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
 <div class="wrap reveal">
   <div class="stats" role="list">
     <div class="stat" role="listitem"><div class="n">2019</div><div class="l body-6">on Upwork since</div></div>
-    <div class="stat" role="listitem"><div class="n">50+</div><div class="l body-6">accounts managed</div></div>
-    <div class="stat" role="listitem"><div class="n">1,000+</div><div class="l body-6">contracts closed</div></div>
-    <div class="stat" role="listitem"><div class="n">$1.5M+</div><div class="l body-6">won for clients</div></div>
+    <div class="stat" role="listitem"><div class="n" data-count="50" data-suffix="+">50+</div><div class="l body-6">accounts managed</div></div>
+    <div class="stat" role="listitem"><div class="n" data-count="1000" data-suffix="+">1,000+</div><div class="l body-6">contracts closed</div></div>
+    <div class="stat" role="listitem"><div class="n" data-count="1.5" data-prefix="$" data-suffix="M+" data-dec="1">$1.5M+</div><div class="l body-6">won for clients</div></div>
   </div>
+</div>
+
+<div class="marquee" aria-label="Upwork niches managed: MERN, AI and Gen AI, DevOps and AWS, Laravel, WordPress, Shopify, Salesforce, Java and Spring, Flutter, React and Next.js, SaaS, Brand and design, Meta Ads, iOS, Odoo">
+  <div class="track" aria-hidden="true"><div class="set"><span>MERN</span><span>AI and Gen AI</span><span>DevOps and AWS</span><span>Laravel</span><span>WordPress</span><span>Shopify</span><span>Salesforce</span><span>Java and Spring</span><span>Flutter</span><span>React and Next.js</span><span>SaaS</span><span>Brand and design</span><span>Meta Ads</span><span>iOS</span><span>Odoo</span></div><div class="set"><span>MERN</span><span>AI and Gen AI</span><span>DevOps and AWS</span><span>Laravel</span><span>WordPress</span><span>Shopify</span><span>Salesforce</span><span>Java and Spring</span><span>Flutter</span><span>React and Next.js</span><span>SaaS</span><span>Brand and design</span><span>Meta Ads</span><span>iOS</span><span>Odoo</span></div></div>
 </div>
 
 <div class="tagline">
@@ -327,6 +400,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
       <p class="body-3">It's a flat monthly fee with <strong>no commission</strong> on what you win. If an account has no real traction by month three, months four and five are free.</p>
       <p class="body-3">Some teams would rather run it themselves. For them I do profile audits, Upwork SEO, title and overview rewrites, portfolio plans, and a proposal framework their bidders can follow.</p>
       <p class="body-6" style="margin-top:24px">Accounts I manage today: MERN, AI and Gen AI, DevOps and AWS, Laravel, WordPress, Shopify, Salesforce, Java and Spring, Flutter, React and Next.js, SaaS, brand and design, Meta Ads, iOS, Odoo.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="process" aria-label="How an account wins at Upwork Growth Desk">
+      <p class="ph caption-1">How an account wins</p>
+      <div class="stepwrap"><span class="rail" aria-hidden="true"><span class="fill"></span></span><ol class="steps"><li style="--i:0"><span class="dot"></span><span class="sn mono caption-4">01</span><span class="st title-3">Score the job</span><span class="sd body-6">Client history, budget and fit, checked before a Connect is spent.</span></li><li style="--i:1"><span class="dot"></span><span class="sn mono caption-4">02</span><span class="st title-3">Write to one client</span><span class="sd body-6">The first two lines answer their post. Nothing copied from the last one.</span></li><li style="--i:2"><span class="dot"></span><span class="sn mono caption-4">03</span><span class="st title-3">Interview</span><span class="sd body-6">Calls and follow ups, handled for you.</span></li><li style="--i:3"><span class="dot"></span><span class="sn mono caption-4">04</span><span class="st title-3">Close</span><span class="sd body-6">Offer, scope and milestones agreed before anyone starts.</span></li><li style="--i:4"><span class="dot"></span><span class="sn mono caption-4">05</span><span class="st title-3">Protect Job Success</span><span class="sd body-6">Every contract watched, so one bad review doesn't cost a year.</span></li></ol></div>
     </div>
   </div>
 </section>
@@ -427,10 +506,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
       <h2 class="heading-4" id="h-code">Open source</h2>
       <p class="body-3" style="max-width:680px">Small, plain versions of the rules I use every day. Free to use and fork.</p>
       <div class="repos">
-        <a class="repo" href="https://github.com/abhishekbhambhana/upwork-job-scorer"><span class="rn">upwork-job-scorer</span><p class="body-6">Scores an Upwork job post from 0 to 100 on client quality, budget, intent and fit.</p><p class="tag caption-4">Python &middot; library and CLI</p></a>
-        <a class="repo" href="https://github.com/abhishekbhambhana/proposal-checker"><span class="rn">proposal-checker</span><p class="body-6">Grades a proposal on its hook, relevance, proof, ask, length and filler.</p><p class="tag caption-4">Python &middot; library and CLI</p></a>
-        <a class="repo" href="https://github.com/abhishekbhambhana/gtm-playbooks"><span class="rn">gtm-playbooks</span><p class="body-6">Outbound playbooks for IT services and SaaS: ICP, cold email, LinkedIn, discovery.</p><p class="tag caption-4">Markdown &middot; CC BY 4.0</p></a>
-        <a class="repo" href="https://github.com/abhishekbhambhana/upwork-growth-toolkit"><span class="rn">upwork-growth-toolkit</span><p class="body-6">Profile, Upwork SEO, proposals, pricing, Job Success and retainer templates.</p><p class="tag caption-4">Markdown &middot; CC BY 4.0</p></a>
+        <a class="repo" href="https://github.com/abhishekbhambhana/upwork-job-scorer"><span class="go" aria-hidden="true">&nearr;</span><span class="rn">upwork-job-scorer</span><p class="body-6">Scores an Upwork job post from 0 to 100 on client quality, budget, intent and fit.</p><p class="tag caption-4">Python &middot; library and CLI</p></a>
+        <a class="repo" href="https://github.com/abhishekbhambhana/proposal-checker"><span class="go" aria-hidden="true">&nearr;</span><span class="rn">proposal-checker</span><p class="body-6">Grades a proposal on its hook, relevance, proof, ask, length and filler.</p><p class="tag caption-4">Python &middot; library and CLI</p></a>
+        <a class="repo" href="https://github.com/abhishekbhambhana/gtm-playbooks"><span class="go" aria-hidden="true">&nearr;</span><span class="rn">gtm-playbooks</span><p class="body-6">Outbound playbooks for IT services and SaaS: ICP, cold email, LinkedIn, discovery.</p><p class="tag caption-4">Markdown &middot; CC BY 4.0</p></a>
+        <a class="repo" href="https://github.com/abhishekbhambhana/upwork-growth-toolkit"><span class="go" aria-hidden="true">&nearr;</span><span class="rn">upwork-growth-toolkit</span><p class="body-6">Profile, Upwork SEO, proposals, pricing, Job Success and retainer templates.</p><p class="tag caption-4">Markdown &middot; CC BY 4.0</p></a>
       </div>
     </div>
   </div>
@@ -458,7 +537,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
     <h2 class="heading-3" id="h-end">Tell me about your Upwork account.</h2>
     <p class="body-3">Thirty minutes. Bring your profile and your last ten proposals, and I'll tell you what I'd change first.</p>
     <div class="cta">
-      <a class="btn lg button-md" href="https://cal.com/abhishek-bhambhana-40tn49/30-min-of-upwork-growth">Book a 30 minute call</a>
+      <a class="btn lg button-md" href="https://cal.com/abhishek-bhambhana-40tn49/30-min-of-upwork-growth">Book a 30 minute call <span class="arr" aria-hidden="true">&rarr;</span></a>
     </div>
     <div class="elsewhere body-6">
       <a class="link" href="https://linkedin.com/in/abhishek-upwork-growth">LinkedIn</a>
@@ -479,6 +558,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
 
 <script>
 document.body.classList.remove('no-js');
+document.documentElement.classList.add('js');
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -490,6 +570,41 @@ document.body.classList.remove('no-js');
     }, {rootMargin:'0px 0px -10% 0px'});
     els.forEach(function(el){ io.observe(el); });
   } else { els.forEach(function(el){ el.classList.add('in'); }); }
+
+
+  // local time in Ahmedabad
+  var clock = document.querySelector('.clock');
+  function tick(){ try { clock.textContent = new Intl.DateTimeFormat('en-GB',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Kolkata'}).format(new Date()) + ' IST'; } catch(e){} }
+  if (clock){ tick(); setInterval(tick, 30000); }
+
+  // numbers count up once
+  var easeOut = function(t){ return 1 - Math.pow(1 - t, 4); };
+  function count(el){
+    var to = parseFloat(el.dataset.count), dec = +(el.dataset.dec||0), pre = el.dataset.prefix||'', suf = el.dataset.suffix||'';
+    if (reduce) return;
+    var t0 = null, dur = 1400;
+    function frame(ts){
+      if (!t0) t0 = ts;
+      var k = Math.min(1, (ts - t0) / dur), v = to * easeOut(k);
+      el.textContent = pre + (dec ? v.toFixed(dec) : Math.round(v).toLocaleString('en-US')) + suf;
+      if (k < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+  var nums = document.querySelectorAll('[data-count]');
+  var proc = document.querySelector('.process');
+  if ('IntersectionObserver' in window) {
+    var io2 = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        if (e.target.classList.contains('stats')) nums.forEach(count);
+        else e.target.classList.add('on');
+        io2.unobserve(e.target);
+      });
+    }, {threshold:0.4});
+    io2.observe(document.querySelector('.stats'));
+    if (proc) io2.observe(proc);
+  } else if (proc) proc.classList.add('on');
 
   // tagline: words go from muted to full as they pass a line at 65% of the viewport
   var p = document.querySelector('[data-words]');
