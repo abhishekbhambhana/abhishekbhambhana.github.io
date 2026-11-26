@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="590" height="300" viewBox="0 0 590 300" role="img" aria-label="Upwork growth: done-for-you Upwork account management by Upwork Growth Desk">
+<title>Upwork growth: done-for-you Upwork account management by Upwork Growth Desk</title>
+<style>
+  .rise { opacity:0; animation: rise .9s cubic-bezier(.23,1,.32,1) forwards; }
+  @keyframes rise { from { opacity:0; transform: translateY(14px); } to { opacity:1; transform:none; } }
+  .fade { opacity:0; animation: fade 1.2s ease forwards; }
+  @keyframes fade { to { opacity:1; } }
+  .blink { animation: blink 1.4s steps(2) infinite; }
+  @keyframes blink { 50% { opacity:.2; } }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: .01s !important; animation-iteration-count: 1 !important; animation-delay: 0s !important; }
+    .rise, .fade { opacity:1; }
+  }
+.bar { transform-box: fill-box; transform-origin: bottom; transform: scaleY(.05); animation: grow 1.1s cubic-bezier(.23,1,.32,1) forwards; }
+@keyframes grow { to { transform: scaleY(1); } }
+.trend { stroke-dasharray: 260; stroke-dashoffset: 260; animation: draw 1.6s cubic-bezier(.23,1,.32,1) .5s forwards; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.tip { opacity:0; animation: fade .3s ease 1.9s forwards, pulse 2s ease-in-out 2.2s infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes pulse { 50% { transform: scale(1.6); opacity:.5; } }
+@media (prefers-reduced-motion: reduce) { .bar { transform:none } .trend { stroke-dashoffset:0 } .tip { opacity:1 } }</style>
+<defs>
+<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#294032"/></pattern>
+<clipPath id="fr"><rect width="590" height="300" rx="20"/></clipPath>
+</defs>
+<g clip-path="url(#fr)">
+<rect width="590" height="300" fill="#07110d"/>
+<rect width="590" height="300" fill="url(#dots)" opacity=".55"/>
+
+</g>
+<rect x=".5" y=".5" width="589" height="299" rx="19.5" fill="none" stroke="#1d3127"/>
+<rect x="0" y="0" width="590" height="4" fill="#caff45" opacity=".0"/>
+<g transform="translate(330 34)"><line x1="0" y1="152" x2="240" y2="152" stroke="#294032"/><rect class="bar" style="animation-delay:0.00s" x="20" y="116" width="22" height="34" rx="5" fill="#294032"/><rect class="bar" style="animation-delay:0.09s" x="56" y="92" width="22" height="58" rx="5" fill="#294032"/><rect class="bar" style="animation-delay:0.18s" x="92" y="100" width="22" height="50" rx="5" fill="#294032"/><rect class="bar" style="animation-delay:0.27s" x="128" y="64" width="22" height="86" rx="5" fill="#294032"/><rect class="bar" style="animation-delay:0.36s" x="164" y="46" width="22" height="104" rx="5" fill="#294032"/><rect class="bar" style="animation-delay:0.45s" x="200" y="18" width="22" height="132" rx="5" fill="#caff45"/>
+<path class="trend" d="M31 108 L67 86 L103 94 L139 58 L175 40 L211 12" fill="none" stroke="#caff45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle class="tip" cx="211" cy="12" r="5" fill="#caff45"/></g>
+<g class="rise" style="animation-delay:.05s">
+  <text x="34" y="60" font-family="'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace" font-size="12.5" letter-spacing="2" fill="#caff45">01  ·  UPWORK GROWTH</text>
+</g>
+<g class="rise" style="animation-delay:.12s">
+  <text x="34" y="104" font-family="'Inter Tight', 'Inter', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="750" font-size="34" letter-spacing="-1" fill="#f4f5ef">Upwork growth</text>
+</g>
+<g class="rise" style="animation-delay:.18s">
+  <text x="34" y="134" font-family="'Instrument Serif', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-style="italic" font-size="21" fill="#8eaa9a">Upwork Growth Desk</text>
+</g>
+<g class="rise" style="animation-delay:0.26s"><circle cx="40" cy="196" r="3" fill="#caff45"/><text x="54" y="201" font-family="'Inter Tight', 'Inter', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#f4f5ef">Done-for-you account management</text></g><g class="rise" style="animation-delay:0.32s"><circle cx="40" cy="226" r="3" fill="#caff45"/><text x="54" y="231" font-family="'Inter Tight', 'Inter', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#f4f5ef">Profile SEO, proposals, interviews</text></g><g class="rise" style="animation-delay:0.38s"><circle cx="40" cy="256" r="3" fill="#caff45"/><text x="54" y="261" font-family="'Inter Tight', 'Inter', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#f4f5ef">Flat fee, zero commission, 100% JSS</text></g>
+</svg>

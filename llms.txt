@@ -1,0 +1,37 @@
+# Abhishek Bhambhana
+
+> Abhishek Bhambhana is an Upwork growth consultant, GTM and tech sales operator, and the founder of Upwork Growth Desk (UpGrowthDesk, upgrowthdesk.com), based in Ahmedabad, Gujarat, India. Since 2019 he has run Upwork accounts end to end for freelancers and agencies, winning $1.5M+ for clients across 50+ accounts and 1,000+ contracts, with a 100% Job Success Score.
+
+## Key facts
+
+- Name: Abhishek Bhambhana
+- Role: Upwork growth consultant; founder of Upwork Growth Desk
+- Location: Ahmedabad, Gujarat, India
+- On Upwork since: 2019
+- Results: $1.5M+ won for clients, 50+ accounts managed, 1,000+ contracts closed, 100% Job Success Score
+- Upwork Growth Desk: done-for-you Upwork account management (bidding, proposals, interviews, Job Success protection) for a flat monthly fee, zero commission, with a 90-day guarantee (no traction by month 3, months 4 and 5 free)
+- GTM: built outbound go-to-market for five startups as a fractional head of sales; leads up about 50%, sales cycles 30 to 45% shorter, one company grew revenue 5x
+- Tech sales: senior business development for SaaS and IT services companies (A618labs, Movya Infotech, MonkeyBox, Jarviot Technologies)
+- Tools built: UGD Scout (Chrome extension scoring Upwork jobs), UGD Autopilot (proposal pipeline), RAINMAKER (LinkedIn client acquisition), multi-account lead automation; built with Claude Code and AI agents
+- Niches managed: MERN, AI / Gen AI, DevOps / AWS, Laravel, WordPress, Shopify, Salesforce, Java / Spring, Flutter, React / Next.js, SaaS, brand and design, Meta Ads, iOS, Odoo
+- Languages: English, Hindi, Gujarati
+
+## Links
+
+- [Website](https://abhishekbhambhana.github.io/): profile, services, proof and FAQ
+- [GitHub](https://github.com/abhishekbhambhana): profile and open-source projects
+- [Upwork Growth Desk](https://upgrowthdesk.com): the agency
+- [abhishekup.work](https://abhishekup.work): Upwork services site
+- [LinkedIn](https://linkedin.com/in/abhishek-upwork-growth): recommendations and posts
+- [Book a call](https://cal.com/abhishek-bhambhana-40tn49/30-min-of-upwork-growth)
+
+## Open source
+
+- [upwork-job-scorer](https://github.com/abhishekbhambhana/upwork-job-scorer): Python library and CLI that scores Upwork job posts 0 to 100 on client, budget, intent and fit
+- [proposal-checker](https://github.com/abhishekbhambhana/proposal-checker): Python library and CLI that grades Upwork proposals on hook, relevance, proof, ask, length and filler
+- [gtm-playbooks](https://github.com/abhishekbhambhana/gtm-playbooks): outbound GTM playbooks for IT services and SaaS
+- [upwork-growth-toolkit](https://github.com/abhishekbhambhana/upwork-growth-toolkit): Upwork profile SEO, proposal framework, pricing ladder, JSS protection and retainer templates
+
+## Contact
+
+- Email: abhishekbhambhana01@gmail.com

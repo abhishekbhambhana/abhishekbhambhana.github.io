@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-label="How an Upwork account wins: radar, score, proposal, interview, contract">
+<title>How an Upwork account wins: radar, score, proposal, interview, contract</title>
+<style>
+  .rise { opacity:0; animation: rise .9s cubic-bezier(.23,1,.32,1) forwards; }
+  @keyframes rise { from { opacity:0; transform: translateY(14px); } to { opacity:1; transform:none; } }
+  .fade { opacity:0; animation: fade 1.2s ease forwards; }
+  @keyframes fade { to { opacity:1; } }
+  .blink { animation: blink 1.4s steps(2) infinite; }
+  @keyframes blink { 50% { opacity:.2; } }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: .01s !important; animation-iteration-count: 1 !important; animation-delay: 0s !important; }
+    .rise, .fade { opacity:1; }
+  }
+.lit { opacity:0; animation: lit 6.0s ease infinite; }
+@keyframes lit { 0% { opacity:1; } 10% { opacity:1; } 18%,100% { opacity:0; } }
+.comet { animation: run 6.0s linear infinite; }
+@keyframes run { 0% { transform: translateX(0); opacity:0; } 5% { opacity:1; } 84% { transform: translateX(980px); opacity:1; } 92%,100% { transform: translateX(980px); opacity:0; } }</style>
+<defs>
+<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#294032"/></pattern>
+<clipPath id="fr"><rect width="1200" height="250" rx="22"/></clipPath>
+</defs>
+<g clip-path="url(#fr)">
+<rect width="1200" height="250" fill="#07110d"/>
+<rect width="1200" height="250" fill="url(#dots)" opacity=".55"/>
+
+</g>
+<rect x=".5" y=".5" width="1199" height="249" rx="21.5" fill="none" stroke="#1d3127"/>
+<text x="40" y="44" font-family="'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace" font-size="12.5" letter-spacing="2" fill="#caff45">HOW AN UPWORK ACCOUNT WINS AT UPWORK GROWTH DESK</text>
+<line x1="110" y1="112" x2="1090" y2="112" stroke="#294032" stroke-width="2" stroke-dasharray="4 6"/>
+<g class="comet"><circle cx="110" cy="112" r="34" fill="#caff45" opacity=".10"/><circle cx="110" cy="112" r="6" fill="#caff45"/></g>
+<circle cx="110" cy="112" r="26" fill="#0f1d17" stroke="#294032" stroke-width="2"/><circle class="lit" style="animation-delay:0.00s" cx="110" cy="112" r="26" fill="none" stroke="#caff45" stroke-width="2"/><text x="110" y="117" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace" font-weight="700" font-size="14" fill="#f4f5ef">01</text><circle cx="355" cy="112" r="26" fill="#0f1d17" stroke="#294032" stroke-width="2"/><circle class="lit" style="animation-delay:1.26s" cx="355" cy="112" r="26" fill="none" stroke="#caff45" stroke-width="2"/><text x="355" y="117" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace" font-weight="700" font-size="14" fill="#f4f5ef">02</text><circle cx="600" cy="112" r="26" fill="#0f1d17" stroke="#294032" stroke-width="2"/><circle class="lit" style="animation-delay:2.52s" cx="600" cy="112" r="26" fill="none" stroke="#caff45" stroke-width="2"/><text x="600" y="117" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace" font-weight="700" font-size="14" fill="#f4f5ef">03</text><circle cx="845" cy="112" r="26" fill="#0f1d17" stroke="#294032" stroke-width="2"/><circle class="lit" style="animation-delay:3.78s" cx="845" cy="112" r="26" fill="none" stroke="#caff45" stroke-width="2"/><text x="845" y="117" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace" font-weight="700" font-size="14" fill="#f4f5ef">04</text><circle cx="1090" cy="112" r="26" fill="#0f1d17" stroke="#294032" stroke-width="2"/><circle class="lit" style="animation-delay:5.04s" cx="1090" cy="112" r="26" fill="none" stroke="#caff45" stroke-width="2"/><text x="1090" y="117" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace" font-weight="700" font-size="14" fill="#f4f5ef">05</text><text x="110" y="172" text-anchor="middle" font-family="'Inter Tight', 'Inter', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="700" font-size="19" fill="#f4f5ef">Radar</text><text x="110" y="196" text-anchor="middle" font-family="'Instrument Serif', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-style="italic" font-size="16" fill="#8eaa9a">live job feed</text><text x="355" y="172" text-anchor="middle" font-family="'Inter Tight', 'Inter', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="700" font-size="19" fill="#f4f5ef">Score</text><text x="355" y="196" text-anchor="middle" font-family="'Instrument Serif', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-style="italic" font-size="16" fill="#8eaa9a">0 to 100 fit</text><text x="600" y="172" text-anchor="middle" font-family="'Inter Tight', 'Inter', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="700" font-size="19" fill="#f4f5ef">Proposal</text><text x="600" y="196" text-anchor="middle" font-family="'Instrument Serif', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-style="italic" font-size="16" fill="#8eaa9a">written for one client</text><text x="845" y="172" text-anchor="middle" font-family="'Inter Tight', 'Inter', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="700" font-size="19" fill="#f4f5ef">Interview</text><text x="845" y="196" text-anchor="middle" font-family="'Instrument Serif', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-style="italic" font-size="16" fill="#8eaa9a">call + follow-ups</text><text x="1090" y="172" text-anchor="middle" font-family="'Inter Tight', 'Inter', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="700" font-size="19" fill="#f4f5ef">Contract</text><text x="1090" y="196" text-anchor="middle" font-family="'Instrument Serif', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-style="italic" font-size="16" fill="#8eaa9a">flat fee, JSS kept</text>
+</svg>

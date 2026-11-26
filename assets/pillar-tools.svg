@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="590" height="300" viewBox="0 0 590 300" role="img" aria-label="Tools and automation: UGD Scout, proposal pipeline, AI agents, lead automation">
+<title>Tools and automation: UGD Scout, proposal pipeline, AI agents, lead automation</title>
+<style>
+  .rise { opacity:0; animation: rise .9s cubic-bezier(.23,1,.32,1) forwards; }
+  @keyframes rise { from { opacity:0; transform: translateY(14px); } to { opacity:1; transform:none; } }
+  .fade { opacity:0; animation: fade 1.2s ease forwards; }
+  @keyframes fade { to { opacity:1; } }
+  .blink { animation: blink 1.4s steps(2) infinite; }
+  @keyframes blink { 50% { opacity:.2; } }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: .01s !important; animation-iteration-count: 1 !important; animation-delay: 0s !important; }
+    .rise, .fade { opacity:1; }
+  }
+.flow { stroke-dasharray: 18 200; stroke-dashoffset: 120; animation: flow 1.4s linear infinite; }
+@keyframes flow { to { stroke-dashoffset: -100; } }
+.core { transform-box: fill-box; transform-origin: center; animation: core 2.8s ease-in-out infinite; }
+@keyframes core { 50% { transform: scale(1.08); } }</style>
+<defs>
+<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#294032"/></pattern>
+<clipPath id="fr"><rect width="590" height="300" rx="20"/></clipPath>
+</defs>
+<g clip-path="url(#fr)">
+<rect width="590" height="300" fill="#07110d"/>
+<rect width="590" height="300" fill="url(#dots)" opacity=".55"/>
+
+</g>
+<rect x=".5" y=".5" width="589" height="299" rx="19.5" fill="none" stroke="#1d3127"/>
+<rect x="0" y="0" width="590" height="4" fill="#caff45" opacity=".0"/>
+<g transform="translate(330 34)"><line x1="20" y1="30" x2="120" y2="75" stroke="#294032" stroke-width="2"/><line class="flow" style="animation-delay:0.00s" x1="20" y1="30" x2="120" y2="75" stroke="#caff45" stroke-width="2" stroke-linecap="round"/><line x1="20" y1="120" x2="120" y2="75" stroke="#294032" stroke-width="2"/><line class="flow" style="animation-delay:0.35s" x1="20" y1="120" x2="120" y2="75" stroke="#caff45" stroke-width="2" stroke-linecap="round"/><line x1="120" y1="75" x2="220" y2="30" stroke="#294032" stroke-width="2"/><line class="flow" style="animation-delay:0.70s" x1="120" y1="75" x2="220" y2="30" stroke="#caff45" stroke-width="2" stroke-linecap="round"/><line x1="120" y1="75" x2="220" y2="120" stroke="#294032" stroke-width="2"/><line class="flow" style="animation-delay:1.05s" x1="120" y1="75" x2="220" y2="120" stroke="#caff45" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="30" r="8" fill="#07110d" stroke="#8eaa9a" stroke-width="2"/><text x="20" y="14" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#8eaa9a">JOB FEED</text><circle cx="20" cy="120" r="8" fill="#07110d" stroke="#8eaa9a" stroke-width="2"/><text x="20" y="146" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#8eaa9a">CRM</text><rect class="core" x="98" y="53" width="44" height="44" rx="12" fill="#caff45"/><text x="120" y="80" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace" font-weight="700" font-size="13" fill="#07110d">AI</text><circle cx="220" cy="30" r="8" fill="#07110d" stroke="#8eaa9a" stroke-width="2"/><text x="220" y="14" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#8eaa9a">PROPOSAL</text><circle cx="220" cy="120" r="8" fill="#07110d" stroke="#8eaa9a" stroke-width="2"/><text x="220" y="146" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace" font-size="10.5" fill="#8eaa9a">REPORT</text></g>
+<g class="rise" style="animation-delay:.05s">
+  <text x="34" y="60" font-family="'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace" font-size="12.5" letter-spacing="2" fill="#caff45">04  ·  TOOLS &amp; AUTOMATION</text>
+</g>
+<g class="rise" style="animation-delay:.12s">
+  <text x="34" y="104" font-family="'Inter Tight', 'Inter', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="750" font-size="34" letter-spacing="-1" fill="#f4f5ef">Tools &amp; automation</text>
+</g>
+<g class="rise" style="animation-delay:.18s">
+  <text x="34" y="134" font-family="'Instrument Serif', 'Iowan Old Style', Georgia, 'Times New Roman', serif" font-style="italic" font-size="21" fill="#8eaa9a">Built with Claude Code &amp; AI agents</text>
+</g>
+<g class="rise" style="animation-delay:0.26s"><circle cx="40" cy="196" r="3" fill="#caff45"/><text x="54" y="201" font-family="'Inter Tight', 'Inter', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#f4f5ef">UGD Scout: scores Upwork jobs in-browser</text></g><g class="rise" style="animation-delay:0.32s"><circle cx="40" cy="226" r="3" fill="#caff45"/><text x="54" y="231" font-family="'Inter Tight', 'Inter', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#f4f5ef">Proposal pipeline, job to draft</text></g><g class="rise" style="animation-delay:0.38s"><circle cx="40" cy="256" r="3" fill="#caff45"/><text x="54" y="261" font-family="'Inter Tight', 'Inter', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#f4f5ef">Multi-account lead automation</text></g>
+</svg>
