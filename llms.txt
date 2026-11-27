@@ -25,7 +25,7 @@
 - [Upwork Growth Desk](https://upgrowthdesk.com): the agency
 - [abhishekup.work](https://abhishekup.work): Upwork services site
 - [LinkedIn](https://linkedin.com/in/abhishek-upwork-growth): recommendations and posts
-- [Book a call](https://cal.com/abhishek-bhambhana-40tn49/30-min-of-upwork-growth)
+- [Book a call](https://cal.com/upgrowthdesk/upwork-growth-discussion-x-ugd)
 
 ## Open source
 
@@ -43,5 +43,5 @@
 
 ## Contact
 
-- Book a call: https://cal.com/abhishek-bhambhana-40tn49/30-min-of-upwork-growth
+- Book a call: https://cal.com/upgrowthdesk/upwork-growth-discussion-x-ugd
 - LinkedIn: https://linkedin.com/in/abhishek-upwork-growth
