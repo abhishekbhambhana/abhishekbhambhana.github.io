@@ -45,7 +45,7 @@
       "worksFor": {"@id": "https://upgrowthdesk.com/#org"},
       "founder": {"@id": "https://upgrowthdesk.com/#org"},
       "knowsLanguage": ["English", "Hindi", "Gujarati"],
-      "knowsAbout": ["Upwork account management", "Upwork profile optimization", "Upwork SEO", "Upwork proposal writing", "Job Success Score", "Go to market strategy", "Outbound sales", "Startup fundraising", "Investor pitch decks", "Tech sales", "SaaS business development", "Sales automation", "AI agents", "Claude Code"],
+      "knowsAbout": ["Upwork account management", "Upwork profile optimization", "Upwork SEO", "Upwork proposal writing", "Job Success Score", "Go to market strategy", "Outbound sales", "Startup fundraising", "Investor pitch decks", "Tech sales", "SaaS business development", "Sales automation"],
       "sameAs": [
         "https://github.com/abhishekbhambhana",
         "https://linkedin.com/in/abhishek-upwork-growth",
@@ -285,8 +285,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
 .process.on .steps .dot{background:var(--accent);border-color:var(--accent)}
 
 
-/* UGD Scout card */
-.scout{border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:var(--s5);box-shadow:0 1px 0 var(--line),0 24px 48px -32px rgba(7,17,13,.35)}
+/* Job score card */
+.jcard{border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:var(--s5);box-shadow:0 1px 0 var(--line),0 24px 48px -32px rgba(7,17,13,.35)}
 .sc-top{display:flex;justify-content:space-between;align-items:center;color:var(--faint);margin-bottom:var(--s4)}
 .sc-brand{display:inline-flex;align-items:center;gap:var(--s2);color:var(--ink);font-weight:600}
 .sc-brand img{width:16px;height:16px;border-radius:4px;display:block}
@@ -308,7 +308,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
 .sc-foot{display:flex;justify-content:space-between;align-items:center;gap:var(--s3);flex-wrap:wrap;padding-top:var(--s4);border-top:1px solid var(--line)}
 .chip{background:var(--lime);color:var(--on-lime);padding:var(--s1) var(--s3);border-radius:8px}
 .sc-next{color:var(--muted)}
-.js .scout{animation:up 900ms var(--ease) 260ms both}
+.js .jcard{animation:up 900ms var(--ease) 260ms both}
 .js .ring .rf{animation:ring 1400ms var(--ease) 700ms both}
 @keyframes ring{from{stroke-dashoffset:100}to{stroke-dashoffset:13}}
 .js .bf{animation:bar 1000ms var(--ease) both;animation-delay:calc(800ms + var(--i) * 90ms)}
@@ -336,7 +336,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
 
 @media (max-width:900px){
   .hero-grid{grid-template-columns:1fr;gap:var(--s7)}
-  .scout-wrap{max-width:420px}
+  .jcard-wrap{max-width:420px}
   .block-grid{grid-template-columns:1fr;gap:var(--s4)}
   .label{position:static}
   .quotes{grid-template-columns:1fr}
@@ -368,7 +368,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
   .marquee span{font-size:18px;line-height:28px;padding:var(--s4) var(--s5)}
 }
 @media (prefers-reduced-motion: reduce){
-  .js .scout,.js .ring .rf,.js .bf,.js .chip,.rbars span,.js .nav,.js .hero .eyebrow,.js .hero .sub,.js .hero .cta,.js .hero h1 .in{animation:none;transition:none;transform:none}
+  .js .jcard,.js .ring .rf,.js .bf,.js .chip,.rbars span,.js .nav,.js .hero .eyebrow,.js .hero .sub,.js .hero .cta,.js .hero h1 .in{animation:none;transition:none;transform:none}
   .marquee .track{animation:none;flex-wrap:wrap;width:auto}
   .marquee .set + .set{display:none}
   .marquee .set{flex-wrap:wrap}
@@ -408,18 +408,18 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
           <p class="proof body-6">"We significantly grew our account, exceeding $100K in revenue." <br>Vijay Gorfad, founder of UnitPay</p>
         </div>
       </div>
-      <figure class="scout-wrap">
-        <div class="scout" role="img" aria-label="Example of UGD Scout scoring an Upwork job: 87 out of 100, worth a Connect">
-          <div class="sc-top caption-4"><span class="sc-brand"><img src="assets/mark.svg" width="16" height="16" alt="">UGD Scout</span><span class="sc-ex">Example job</span></div>
+      <figure class="jcard-wrap">
+        <div class="jcard" role="img" aria-label="Example job scored 87 out of 100, worth a Connect">
+          <div class="sc-top caption-4"><span class="sc-brand"><img src="assets/mark.svg" width="16" height="16" alt="">Job score</span><span class="sc-ex">Example job</span></div>
           <p class="sc-title title-3">Senior MERN developer for a SaaS dashboard</p>
           <p class="sc-meta caption-4">Payment verified &middot; $48K spent &middot; 4.9 rating &middot; 12 hires</p>
           <div class="sc-mid">
             <div class="ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" class="rb"/><circle cx="60" cy="60" r="52" class="rf" pathLength="100"/></svg><div class="rn"><span class="mono" data-count="87" data-auto>87</span><small class="caption-4">/100</small></div></div>
             <ul class="sc-bars caption-4"><li style="--v:92%;--i:0"><span class="bl">Client</span><span class="bt"><span class="bf"></span></span><span class="bv mono">92</span></li><li style="--v:80%;--i:1"><span class="bl">Budget</span><span class="bt"><span class="bf"></span></span><span class="bv mono">80</span></li><li style="--v:88%;--i:2"><span class="bl">Intent</span><span class="bt"><span class="bf"></span></span><span class="bv mono">88</span></li><li style="--v:86%;--i:3"><span class="bl">Fit</span><span class="bt"><span class="bf"></span></span><span class="bv mono">86</span></li></ul>
           </div>
-          <div class="sc-foot"><span class="chip button-sm">Worth a Connect</span><span class="caption-4 sc-next">Draft in UGD Autopilot &rarr;</span></div>
+          <div class="sc-foot"><span class="chip button-sm">Worth a Connect</span><a class="caption-4 sc-next" href="https://github.com/abhishekbhambhana/upwork-job-scorer">upwork-job-scorer &rarr;</a></div>
         </div>
-        <figcaption class="portrait-cap caption-4">UGD Scout, the Chrome extension we built to score Upwork jobs. Example data.</figcaption>
+        <figcaption class="portrait-cap caption-4">How I read a job before bidding, using the open source upwork-job-scorer. Example data.</figcaption>
       </figure>
     </div>
   </div>
@@ -502,25 +502,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
   </div>
 </section>
 
-<section class="block" id="tools" aria-labelledby="h-tools">
-  <div class="wrap block-grid reveal">
-    <div class="label caption-1"><span class="num">04</span><span class="what">Tools</span></div>
-    <div class="prose">
-      <h2 class="heading-4" id="h-tools">Tools I built for the desk</h2>
-      <p class="body-3">I build most of our internal tooling myself, with Claude Code and AI agents. Each one exists because a person was doing the same thing by hand every day.</p>
-      <ul class="rows body-3">
-        <li><span class="k title-3">UGD Scout</span><span class="v">A Chrome extension that scores a live Upwork job before anyone spends a Connect on it.</span></li>
-        <li><span class="k title-3">UGD Autopilot</span><span class="v">Takes a job post to a reviewed proposal draft. A panel of simulated clients reads it before a person does.</span></li>
-        <li><span class="k title-3">RAINMAKER</span><span class="v">Our LinkedIn client acquisition system.</span></li>
-        <li><span class="k title-3">Lead automation</span><span class="v">Lead capture across several accounts, with webhook enrichment.</span></li>
-      </ul>
-    </div>
-  </div>
-</section>
 
 <section class="block" id="teams" aria-labelledby="h-teams">
   <div class="wrap block-grid reveal">
-    <div class="label caption-1"><span class="num">05</span><span class="what">Teams</span></div>
+    <div class="label caption-1"><span class="num">04</span><span class="what">Teams</span></div>
     <div class="prose">
       <h2 class="heading-4" id="h-teams">Products I was part of</h2>
       <p class="body-3">I was part of the team on each of these. The products belong to their founders.</p>
@@ -536,7 +521,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
 <section class="block" id="proof" aria-labelledby="h-proof">
   <div class="wrap reveal">
     <div class="block-grid">
-      <div class="label caption-1"><span class="num">06</span><span class="what">Proof</span></div>
+      <div class="label caption-1"><span class="num">05</span><span class="what">Proof</span></div>
       <div class="prose">
         <h2 class="heading-4" id="h-proof">What people I've worked with say</h2>
         <p class="body-3">From nine recommendations on <a class="link" href="https://www.linkedin.com/in/abhishek-upwork-growth/details/recommendations/">LinkedIn</a>, all five stars.</p>
@@ -561,7 +546,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
 
 <section class="block" id="code" aria-labelledby="h-code">
   <div class="wrap block-grid reveal">
-    <div class="label caption-1"><span class="num">07</span><span class="what">Open source</span></div>
+    <div class="label caption-1"><span class="num">06</span><span class="what">Open source</span></div>
     <div class="prose" style="max-width:none">
       <h2 class="heading-4" id="h-code">Open source</h2>
       <p class="body-3" style="max-width:680px">Small, plain versions of the rules I use every day. Free to use and fork.</p>
@@ -577,7 +562,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:
 
 <section class="block" id="faq" aria-labelledby="h-faq">
   <div class="wrap block-grid reveal">
-    <div class="label caption-1"><span class="num">08</span><span class="what">FAQ</span></div>
+    <div class="label caption-1"><span class="num">07</span><span class="what">FAQ</span></div>
     <div class="prose">
       <h2 class="heading-4" id="h-faq">Questions people ask</h2>
       <div class="faq body-3">

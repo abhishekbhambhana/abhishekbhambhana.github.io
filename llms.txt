@@ -15,7 +15,6 @@
 - MonkeyBox (Bengaluru, Oct 2021 to Mar 2024): business development, product and growth. Built investor and VC relationships and worked on pitches and negotiation as the company worked toward $10M+ in funding. MonkeyBox is backed by Blume Ventures, which led its 2016 seed round and its pre Series A (with NB Ventures, Nspira and angel investors).
 - Tech sales: A618labs (senior business development manager, SaaS and IT services, Apr 2024 to Aug 2025), Movya Infotech (Jun to Nov 2024), Jarviot Technologies (intern to business development manager, 2019 to 2021)
 - Part of the team on: FabricHQ.ai (AI SaaS), GetEmail.io (email finding API, 500K+ calls a day), UpFirst.ai (agentic system on LangGraph). These products belong to their founders.
-- Tools he built: UGD Scout (Chrome extension that scores Upwork jobs), UGD Autopilot (job post to reviewed proposal draft), RAINMAKER (LinkedIn client acquisition), multi account lead automation. Built with Claude Code and AI agents.
 - Niches managed: MERN, AI / Gen AI, DevOps / AWS, Laravel, WordPress, Shopify, Salesforce, Java / Spring, Flutter, React / Next.js, SaaS, brand and design, Meta Ads, iOS, Odoo
 - Languages: English, Hindi, Gujarati
 
