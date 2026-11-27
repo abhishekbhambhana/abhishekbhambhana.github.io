@@ -1,6 +1,6 @@
 # Abhishek Bhambhana
 
-> Abhishek Bhambhana is an Upwork growth consultant and the founder of Upwork Growth Desk (UpGrowthDesk, upgrowthdesk.com), based in Ahmedabad, Gujarat, India. He has run Upwork accounts for freelancers and agencies since 2019: 50+ accounts, 1,000+ contracts, $1.5M+ won for clients, with a 100% Job Success Score. He has also worked in go to market and tech sales for startups, including fundraising work at MonkeyBox and growth and investor work at UnitPay.
+> Abhishek Bhambhana is an Upwork growth consultant and the founder of Upwork Growth Desk (UpGrowthDesk, upgrowthdesk.com), based in Ahmedabad, Gujarat, India. He has worked with freelancers and agencies on Upwork since 2019: 50+ teams, 1,000+ contracts, $1.5M+ won for clients, with a 100% Job Success Score. He has also worked in go to market and tech sales for startups, including fundraising work at MonkeyBox and growth and investor work at UnitPay.
 
 ## Key facts
 
@@ -8,14 +8,14 @@
 - Role: Upwork growth consultant; founder of Upwork Growth Desk
 - Location: Ahmedabad, Gujarat, India
 - On Upwork since: 2019
-- Results: $1.5M+ won for clients, 50+ accounts managed, 1,000+ contracts closed, 100% Job Success Score
-- Upwork Growth Desk: Upwork account management (job selection, proposals, interviews, Job Success protection) for a flat monthly fee with no commission. If an account has no traction by month 3, months 4 and 5 are free.
+- Results: $1.5M+ won for clients, 50+ freelancers and agencies helped, 1,000+ contracts won, 100% Job Success Score
+- Upwork Growth Desk: Upwork growth consulting (job selection, proposal strategy, interview prep, Job Success protection) for a flat monthly fee with no commission. If there's no traction by month 3, months 4 and 5 are free.
 - Go to market: fractional head of sales for five early startups (Dec 2024 to Mar 2025). Leads up about 50%, sales cycles 30 to 45% shorter, one company grew revenue 5x.
 - UnitPay: reported to founder Vijay Gorfad. Worked on growth and sales: channel choice, sales cycle, investor pitches and decks. Vijay Gorfad wrote that the account grew past $100K in revenue under his guidance.
 - MonkeyBox (Bengaluru, Oct 2021 to Mar 2024): business development, product and growth. Built investor and VC relationships and worked on pitches and negotiation as the company worked toward $10M+ in funding. MonkeyBox is backed by Blume Ventures, which led its 2016 seed round and its pre Series A (with NB Ventures, Nspira and angel investors).
 - Tech sales: A618labs (senior business development manager, SaaS and IT services, Apr 2024 to Aug 2025), Movya Infotech (Jun to Nov 2024), Jarviot Technologies (intern to business development manager, 2019 to 2021)
 - Part of the team on: FabricHQ.ai (AI SaaS), GetEmail.io (email finding API, 500K+ calls a day), UpFirst.ai (agentic system on LangGraph). These products belong to their founders.
-- Niches managed: MERN, AI / Gen AI, DevOps / AWS, Laravel, WordPress, Shopify, Salesforce, Java / Spring, Flutter, React / Next.js, SaaS, brand and design, Meta Ads, iOS, Odoo
+- Niches he works with: MERN, AI / Gen AI, DevOps / AWS, Laravel, WordPress, Shopify, Salesforce, Java / Spring, Flutter, React / Next.js, SaaS, brand and design, Meta Ads, iOS, Odoo
 - Languages: English, Hindi, Gujarati
 
 ## Links
